@@ -14,23 +14,23 @@
     }
     
     p {
-        color: rgb(255, 94, 0);
+        color: #ffffff
     }
     
     h2 {
-        color: white;
+        color: #ffffff;
         margin-left: 20rem;
     }
     /* ***************** ESTILOS MENU ************************** */
     
     .menu ul li a {
-        color: rgb(255, 94, 0) !important;
+        color: #ECDDD5 !important;
         text-decoration: none;
         margin-bottom: 3rem;
     }
     
     .menu ul li a:hover {
-        color: white !important;
+        color: #ffffff !important;
     }
     /* ***************** ESTILOS MAIN ************************** */
     
@@ -82,6 +82,10 @@
     }
     /* ***************** ESTILOS SECCION QUIEN SOY ************************** */
     
+    #quien_soy {
+        margin: auto;
+    }
+    
     .conteiner__quienSoy {
         display: flex;
         text-align: center;
@@ -119,7 +123,7 @@
     }
     
     .redes:hover {
-        background-color: rgb(255, 94, 0);
+        background-color: #ffffff;
     }
     
     .linked,
@@ -181,8 +185,8 @@
     .arriba {
         position: fixed;
         z-index: 100;
-        top: 38rem;
-        right: 1rem;
+        top: 36rem;
+        right: 0.3rem;
         background-color: yellow;
         width: 3.125rem;
         border-radius: 50%;
@@ -192,6 +196,11 @@
     
     .tecnoGaby {
         width: 23.125rem;
+    }
+    
+    .imgPaint {
+        width: 22rem;
+        height: 18rem;
     }
     
     #portfolio {
@@ -230,7 +239,7 @@
         display: flex;
         flex-direction: column;
         margin-bottom: 12.5rem;
-        margin-top: 15rem;
+        margin-top: 40rem;
     }
     
     .container__imgSkills {
@@ -240,12 +249,12 @@
         background-color: #715b4e73;
         align-items: center;
         margin-bottom: -3rem;
-        margin-top: 25rem;
+        margin-top: 55rem;
     }
     
     #skills {
-        margin-top: 20rem;
-        margin-bottom: -20rem;
+        margin-top: 85rem;
+        margin-bottom: -50rem;
     }
     
     .imgSkills {
@@ -266,82 +275,81 @@
     
     .copi {
         text-align: center;
+        margin-bottom: 10px;
     }
     /* **************************** MEDIA QUERIES *************************** */
     
-    @media only screen and (max-width: 572px) {
+    @media (max-width: 572px) {
         * {
-            /* border: 1px solid white; */
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .conteiner__quienSoy {
+            margin-top: -1rem;
+        }
+        #quien_soy {
+            margin: auto;
         }
         .main {
             justify-content: center;
         }
-        .container_servicios {
-            margin-bottom: 10em;
-        }
-        .tituloServicios2 {
-            position: relative;
-            left: -1rem;
-            /* border: 1px solid white; */
-        }
-        .imgServicios {
-            width: 12rem;
-            margin-left: 1rem;
-            margin-bottom: 2rem;
-        }
-        .serv {
+        .conteinerServicios {
             display: flex;
-            flex-wrap: wrap;
-            width: 32.5rem;
-            margin-left: -4rem;
-        }
-        .pServicios {
-            margin: auto;
-        }
-        .imgServicios {
             justify-content: center;
-            margin-left: 1.5rem;
-        }
-        .conteiner__portfolios {
-            margin-bottom: 40rem;
-        }
-        .tituloDesarrollo {
+            flex-wrap: wrap;
             margin: auto;
-        }
-        #portfolio {
-            margin-bottom: 2rem;
-        }
-        .desarrollos a {
-            width: 40rem;
-            border: 1px solid white;
-            /* padding-top: -20rem;
-            margin-top: -20rem; */
+            width: 350px;
         }
         .pDesarrollos {
             margin-top: 3rem;
         }
-        .container__imgSkills {
+        .imgServicios {
+            margin-left: 55px;
+            width: 15rem;
+        }
+        .serv {
             display: flex;
-            flex-wrap: wrap;
+            justify-content: center;
+            position: relative;
+            right: 100px;
+            width: 500px;
+        }
+        .tituloServicios2 {
+            text-align: center;
+            margin: auto;
+            width: 340px;
+        }
+        .pServicios {
+            letter-spacing: 0.2rem;
+            width: 540px;
+            margin-left: 50px;
+        }
+        .tituloDesarrollo {
+            margin: auto;
+        }
+        .container-img-servicios {
+            display: flex;
+            justify-content: center;
+        }
+        .conteiner__portfolios {
+            height: auto;
+        }
+        #skills {
+            margin-top: -40rem;
+            margin-bottom: -130rem;
         }
         .conteiner__skills {
-            padding-top: 27rem;
-            margin-top: 27rem;
-            position: relative;
-            top: 27rem;
+            height: auto;
+            margin-bottom: -240rem;
         }
-        .img__skills_1 {
-            width: 5rem;
-            cursor: pointer;
-            padding: 1rem;
+        .container__imgSkills {
+            height: auto;
+            position: relative;
+            top: 1230px;
         }
         .copi {
-            position: relative;
-            top: 25rem;
-        }
-        .arriba {
-            margin-right: -1.4rem;
-            margin-top: 9rem;
+            margin-top: 240rem;
         }
     }
     
@@ -356,7 +364,7 @@
         }
         .tituloServicios2 {
             display: inline;
-            width: 80%;
+            /* width: 80%; */
             font-size: 2rem;
             /* border: 1px solid white; */
         }
@@ -364,9 +372,9 @@
             margin-right: 6rem;
         }
         .container__imgSkills {
-            display: flex;
+            /* display: flex;
             flex-wrap: wrap;
-            margin-bottom: -5rem;
+            margin-bottom: -5rem; */
         }
         .img__skills_1 {
             width: 6rem;
@@ -374,32 +382,29 @@
             padding: 1rem;
         }
         .conteiner__portfolios {
-            margin-bottom: 40rem;
+            /* margin-bottom: 40rem; */
         }
         .tituloDesarrollo {
             margin: auto;
         }
         #portfolio {
-            margin-bottom: 2rem;
+            /* margin-bottom: 2rem; */
         }
         .pDesarrollos {
-            margin-top: 3rem;
+            /* margin-top: 3rem; */
         }
         .conteiner__skills {
-            padding-top: 25rem;
+            /* padding-top: 25rem;
             margin-top: 30rem;
             position: relative;
-            top: 20rem;
+            top: 80rem; */
         }
         .copi {
-            padding-top: 10rem;
-            margin-top: 10rem;
+            /* padding-top: 10rem;
+            margin-top: 65rem;
+            margin-bottom: 5rem;
             position: relative;
-            top: 30rem;
-        }
-        .arriba {
-            margin-right: -1.7rem;
-            margin-top: 5rem;
+            top: 75rem; */
         }
     }
     
@@ -414,7 +419,7 @@
         }
         .tituloServicios2 {
             display: inline-block;
-            width: 80%;
+            /* width: 80%; */
             font-size: 2rem;
             /* border: 1px solid white; */
         }
@@ -422,39 +427,39 @@
             margin-left: 8rem;
         }
         .conteiner__portfolios {
-            margin-bottom: -40rem;
+            /* margin-bottom: -40rem; */
         }
         .tituloDesarrollo {
             margin: auto;
         }
         #portfolio {
-            margin-bottom: 2rem;
+            /* margin-bottom: 2rem; */
         }
         .pDesarrollos {
-            margin-top: 3rem;
+            /* margin-top: 3rem; */
         }
         #skills {
-            margin-top: 70rem;
-            margin-bottom: 13rem;
+            /* margin-top: 70rem;
+            margin-bottom: 13rem; */
         }
         .container__imgSkills {
             display: flex;
             flex-wrap: wrap;
-            margin-bottom: -5rem;
-            margin-top: -10rem;
+            /* margin-bottom: -5rem;
+            margin-top: -10rem; */
         }
         .conteiner__skills {
-            padding-top: 20rem;
-            margin-top: 20rem;
-            margin-bottom: -10rem;
+            /* padding-top: 10rem;
+            margin-top: 60rem;
+            margin-bottom: 40rem;
+            position: relative;
+            top: 35rem; */
         }
         .copi {
+            /* margin-top: -27rem;
+            margin-bottom: 5rem;
             position: relative;
-            top: 25rem;
-        }
-        .arriba {
-            margin-right: -1.7rem;
-            margin-top: 5rem;
+            top: 20rem; */
         }
     }
     
@@ -466,22 +471,18 @@
         }
         .tituloServicios2 {
             display: inline-block;
-            margin: auto;
-            width: 80%;
+            /* margin: auto;
+            width: 80%; */
             font-size: 2rem;
             text-align: center;
             /* border: 1px solid white; */
         }
         .conteiner__skills {
-            padding-top: 20rem;
-            margin-top: 10rem;
+            /* padding-top: 10rem;
+            margin-top: 60rem; */
         }
         .tituloDesarrollo {
             margin: auto;
             margin-bottom: 1rem;
-        }
-        .arriba {
-            margin-right: 1rem;
-            margin-top: 1rem;
         }
     }
