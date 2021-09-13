@@ -10,3 +10,16 @@
         }, 400);
     };
     writing("Gabriel Marzioli");
+
+    function mostrarForm() {
+
+        let formu = document.getElementById("contacto");
+
+        formu.classList.replace('containerForm', 'mostrarForm');
+    }
+    let cambiarClase = document.querySelectorAll('.cambiarClase');
+    for (const i of cambiarClase) {
+        i.addEventListener('click', function() {
+            mostrarForm();
+        });
+    }

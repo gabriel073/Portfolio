@@ -21,6 +21,12 @@
         color: #ffffff;
         margin-left: 20rem;
     }
+    
+    .pQuienSoy,
+    .pServicios,
+    .pDesarrollos {
+        font-size: 1.3rem;
+    }
     /* ***************** ESTILOS MENU ************************** */
     
     .menu ul li a {
@@ -61,7 +67,7 @@
     
     .foto__perfil {
         border-radius: 50%;
-        width: 50vw;
+        width: 40vw;
         margin-top: 1rem;
         margin-bottom: 1.5rem;
         margin-left: 2rem;
@@ -80,6 +86,13 @@
     .miNombre {
         font-family: 'DotGothic16', sans-serif;
     }
+    
+    .linea {
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
     /* ***************** ESTILOS SECCION QUIEN SOY ************************** */
     
     #quien_soy {
@@ -94,16 +107,20 @@
         margin-bottom: 3rem;
         margin-top: 15rem;
         height: 41rem;
+        margin-top: 15rem;
+        padding-top: 5rem;
     }
     
     .pQuienSoy {
-        letter-spacing: 0.125rem;
+        letter-spacing: 0.155rem;
         margin-bottom: 4.375rem;
+        white-space: pre-wrap;
     }
     
     .descargarCV {
         display: flex;
-        margin-bottom: 1.25rem;
+        margin-top: -7rem;
+        padding-left: 3rem;
     }
     
     .descargarCV a {
@@ -146,6 +163,7 @@
     
     .tituloServicios2 {
         text-align: center;
+        padding-bottom: 3rem;
         margin: auto;
     }
     
@@ -154,8 +172,11 @@
         align-items: center;
         height: auto;
         letter-spacing: 0.125rem;
-        padding: 0.625rem;
         justify-content: center;
+    }
+    
+    .serv {
+        margin-bottom: 3rem;
     }
     
     #quien_soy,
@@ -176,16 +197,16 @@
         margin-bottom: 10rem;
     }
     
-    .serv {
+    .container-img-servicios {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
     }
     /* ********************** ESTILOS SUBIR AL MENU ************************* */
     
     .arriba {
         position: fixed;
         z-index: 100;
-        top: 36rem;
+        top: 34rem;
         right: 0.3rem;
         background-color: yellow;
         width: 3.125rem;
@@ -238,8 +259,8 @@
         text-align: center;
         display: flex;
         flex-direction: column;
-        margin-bottom: 12.5rem;
-        margin-top: 40rem;
+        margin-bottom: 11rem;
+        margin-top: 45rem;
     }
     
     .container__imgSkills {
@@ -248,7 +269,7 @@
         justify-content: space-around;
         background-color: #715b4e73;
         align-items: center;
-        margin-bottom: -3rem;
+        margin-bottom: -1rem;
         margin-top: 55rem;
     }
     
@@ -263,7 +284,7 @@
     }
     
     .img__skills_1 {
-        width: 8rem;
+        width: 6rem;
         cursor: pointer;
         padding: 1rem;
         margin-left: 1.5rem;
@@ -285,14 +306,34 @@
             padding: 0;
             box-sizing: border-box;
         }
+        body {
+            width: 98vw;
+            margin: 0;
+        }
+        .pQuienSoy,
+        .pServicios,
+        .pDesarrollos {
+            font-size: 1rem;
+        }
+        .foto__perfil {
+            width: 70vw;
+        }
+        .pQuienSoy {
+            padding: 20px;
+        }
         .conteiner__quienSoy {
             margin-top: -1rem;
+            margin-bottom: 13rem;
         }
         #quien_soy {
             margin: auto;
         }
         .main {
             justify-content: center;
+        }
+        .descargarCV {
+            margin-top: -3rem;
+            padding: 8px;
         }
         .conteinerServicios {
             display: flex;
@@ -311,19 +352,19 @@
         .serv {
             display: flex;
             justify-content: center;
-            position: relative;
-            right: 100px;
-            width: 500px;
+            flex-wrap: wrap;
+            margin: auto;
+            margin-bottom: 4rem;
+            width: 92vw;
         }
         .tituloServicios2 {
             text-align: center;
             margin: auto;
-            width: 340px;
         }
         .pServicios {
             letter-spacing: 0.2rem;
-            width: 540px;
-            margin-left: 50px;
+            width: 100%;
+            margin: auto;
         }
         .tituloDesarrollo {
             margin: auto;
@@ -331,158 +372,44 @@
         .container-img-servicios {
             display: flex;
             justify-content: center;
+            width: 50%;
+            margin: auto;
+        }
+        .arriba {
+            width: 2.4rem;
+            margin-right: 8px;
+            margin-top: -3rem;
+        }
+        .formulario {
+            display: none;
+            width: 90vw;
+            border: 2px solid white;
+        }
+        .form-row .input-email {
+            width: 100%;
         }
         .conteiner__portfolios {
             height: auto;
         }
         #skills {
-            margin-top: -40rem;
+            margin-top: -50rem;
             margin-bottom: -130rem;
         }
         .conteiner__skills {
             height: auto;
-            margin-bottom: -240rem;
+            margin-bottom: -262rem;
         }
         .container__imgSkills {
             height: auto;
             position: relative;
-            top: 1230px;
-        }
-        .copi {
-            margin-top: 240rem;
-        }
-    }
-    
-    @media only screen and (max-width: 795px) {
-        .main {
-            justify-content: center;
-        }
-        .serv {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        .tituloServicios2 {
-            display: inline;
-            /* width: 80%; */
-            font-size: 2rem;
-            /* border: 1px solid white; */
-        }
-        .pServicios {
-            margin-right: 6rem;
-        }
-        .container__imgSkills {
-            /* display: flex;
-            flex-wrap: wrap;
-            margin-bottom: -5rem; */
+            top: 1200px;
         }
         .img__skills_1 {
-            width: 6rem;
-            cursor: pointer;
-            padding: 1rem;
-        }
-        .conteiner__portfolios {
-            /* margin-bottom: 40rem; */
-        }
-        .tituloDesarrollo {
-            margin: auto;
-        }
-        #portfolio {
-            /* margin-bottom: 2rem; */
-        }
-        .pDesarrollos {
-            /* margin-top: 3rem; */
-        }
-        .conteiner__skills {
-            /* padding-top: 25rem;
-            margin-top: 30rem;
-            position: relative;
-            top: 80rem; */
+            width: 20vw;
         }
         .copi {
-            /* padding-top: 10rem;
-            margin-top: 65rem;
-            margin-bottom: 5rem;
-            position: relative;
-            top: 75rem; */
-        }
-    }
-    
-    @media only screen and (max-width: 990px) {
-        .main {
-            justify-content: center;
-        }
-        .serv {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        .tituloServicios2 {
-            display: inline-block;
-            /* width: 80%; */
-            font-size: 2rem;
-            /* border: 1px solid white; */
-        }
-        .pServicios {
-            margin-left: 8rem;
-        }
-        .conteiner__portfolios {
-            /* margin-bottom: -40rem; */
-        }
-        .tituloDesarrollo {
-            margin: auto;
-        }
-        #portfolio {
-            /* margin-bottom: 2rem; */
-        }
-        .pDesarrollos {
-            /* margin-top: 3rem; */
-        }
-        #skills {
-            /* margin-top: 70rem;
-            margin-bottom: 13rem; */
-        }
-        .container__imgSkills {
-            display: flex;
-            flex-wrap: wrap;
-            /* margin-bottom: -5rem;
-            margin-top: -10rem; */
-        }
-        .conteiner__skills {
-            /* padding-top: 10rem;
-            margin-top: 60rem;
-            margin-bottom: 40rem;
-            position: relative;
-            top: 35rem; */
-        }
-        .copi {
-            /* margin-top: -27rem;
-            margin-bottom: 5rem;
-            position: relative;
-            top: 20rem; */
-        }
-    }
-    
-    @media only screen and (max-width: 1199px) {
-        .serv {
-            display: flex;
-            justify-content: center;
-            /* margin-right: 10rem; */
-        }
-        .tituloServicios2 {
-            display: inline-block;
-            /* margin: auto;
-            width: 80%; */
-            font-size: 2rem;
-            text-align: center;
-            /* border: 1px solid white; */
-        }
-        .conteiner__skills {
-            /* padding-top: 10rem;
-            margin-top: 60rem; */
-        }
-        .tituloDesarrollo {
-            margin: auto;
-            margin-bottom: 1rem;
+            height: 5.7rem;
+            margin-top: 260rem;
+            margin-bottom: 10rem;
         }
     }
